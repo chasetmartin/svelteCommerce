@@ -1,38 +1,25 @@
-# create-svelte
+# svelteCommerce_prisma
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Description
 
-## Creating a project
+#### This is a simple SvelteKit application is an example ecommerce pricing estimator, where user can create estimates for window inserts for their home. Each window estimate is saved to a sqlite development database using Prisma as an ORM.
 
-If you're seeing this, you've probably already done this step. Congrats!
+This is not deployment ready - it is just to show my CRUD abilities in SvelteKit
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Installation
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To clone and run this application with your own sqlite dev db:
 
 ```bash
-npm run dev
+# Clone this repository
+$ git clone https://github.com/chasetmartin/svelteCommerce_prisma.git
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# Go into the repository
+$ cd svelteCommerce_prisma
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
