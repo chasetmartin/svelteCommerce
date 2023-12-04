@@ -2,7 +2,7 @@
 
 ## Description
 
-### This is an example SvelteKit ecommerce pricing estimator, where user can create estimates for window inserts for their home. Each window estimate is saved to a sqlite development database using Prisma as an ORM. The app is styled using TailwindCSS.
+### This is an example SvelteKit ecommerce pricing estimator, where users can create estimates for buying window inserts for their home/business. Each window estimate is saved to a sqlite development database using Prisma as an ORM, then immediately displayed back to the user. The app is styled using TailwindCSS.
 
 This is not deployment ready - it is just to show my CRUD abilities in SvelteKit.
 
