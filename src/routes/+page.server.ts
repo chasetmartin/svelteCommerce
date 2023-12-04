@@ -1,7 +1,12 @@
 import { fail, type Actions } from "@sveltejs/kit";
 import { prisma } from "$lib/server/prisma";
+import type { PageServerLoad } from "./$types";
 
-
+export const load: PageServerLoad = async () => {
+    return {
+        windows: await prisma.window.findMany()
+    }
+};
 
 export const actions: Actions = {
     createWindowEstimate : async ({ request }) => {

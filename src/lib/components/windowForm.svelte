@@ -22,7 +22,7 @@
             <label for="height">Window height</label>
             <input class="outline rounded-sm p-2 m-2" type="text" name="height" id="height" placeholder="Height">
             <br>
-            <button class="p-2 rounded-md outline hover:bg-teal-100" type="submit">Save Insert to Estimate</button>
+            <button class="p-2 rounded-md outline hover:bg-teal-300" type="submit">Save Insert to Estimate</button>
         </form>
     </div>
 </div>
