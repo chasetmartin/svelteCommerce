@@ -6,6 +6,8 @@
 
 This is not deployment ready - it is just to show my CRUD abilities in SvelteKit
 
+<img width="1267" alt="Screenshot 2023-12-04 at 12 11 56 PM" src="https://github.com/chasetmartin/svelteCommerce_prisma/assets/36861079/d44c0c68-d27f-4a9d-a740-0a367aa518ab">
+
 ## Installation
 
 To clone and run this application with your own sqlite dev db:
