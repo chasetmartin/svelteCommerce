@@ -8,7 +8,7 @@ This is not deployment ready - it is just to show my CRUD abilities in SvelteKit
 
 The Login / Logout functionality are not setup.
 
-<img width="1267" alt="Screenshot 2023-12-04 at 12 11 56 PM" src="https://github.com/chasetmartin/svelteCommerce_prisma/assets/36861079/d44c0c68-d27f-4a9d-a740-0a367aa518ab">
+![Screenshot 2023-12-04 at 3 53 29 PM](https://github.com/chasetmartin/svelteCommerce_prisma/assets/36861079/46bc39c7-e7bc-4463-a485-0160261f26cb)
 
 ## Installation
 
