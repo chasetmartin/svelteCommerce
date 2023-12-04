@@ -43,5 +43,26 @@ export const actions: Actions = {
         return {
             status: 201
         }
+    },
+    deleteWindowEstimate: async ({ url }) => {
+        const id = url.searchParams.get('id');
+        if (!id) {
+            return fail(400, { message: 'Missing id parameter.' });
+        }
+
+        try {
+            await prisma.window.delete({
+                where: {
+                    id: Number(id)
+                }
+            })
+        } catch (error) {
+            console.log(error);
+            return fail (500, { message: 'Something went wrong deleting this window estimate!' });
+        }
+
+        return {
+            status: 200
+        }
     }
 };

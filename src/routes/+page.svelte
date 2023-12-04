@@ -14,7 +14,7 @@
     }
 
 </script>
-<h1 class="text-4xl font-bold text-white text-center mx-auto p-8 mb-4 bg-teal-500">Instant Estimate Calculator</h1>
+<h1 class="text-4xl font-bold text-white text-center mx-auto p-16 mb-4 bg-indow">Instant Estimate Calculator</h1>
 <h2 class="text-xl text-center p-4">{ instructions.en }</h2>
 <div class="grid-cols-3 p-3">
     <div class="p-4">
@@ -47,7 +47,10 @@
                     </h4>
                     <h4>Price: ${Number(window.price).toFixed(2)}</h4>
                     <p>Width: {window.width} inches</p>
-                    <p>Height: {window.height} inches</p>
+                    <p class="mb-3">Height: {window.height} inches</p>
+                    <form action="?/deleteWindowEstimate&id={window.id}" method="POST">
+                        <button type="submit" class="p-1 rounded-md outline hover:bg-teal-300">Delete Window</button>
+                    </form>
             </div>
         </div>
         {/each}
