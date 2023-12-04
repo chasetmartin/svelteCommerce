@@ -2,6 +2,8 @@
 
 </script>
 
+<!-- Git test -->
+
 <div class="mx-auto w-3/5 rounded-xl outline text-center">
     <div class="shadow-xl p-4">
         <h3 class="text-xl font-semibold">Add a window to your estimate:</h3>
