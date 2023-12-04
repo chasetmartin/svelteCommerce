@@ -49,7 +49,7 @@
                     <p>Width: {window.width} inches</p>
                     <p class="mb-3">Height: {window.height} inches</p>
                     <form action="?/deleteWindowEstimate&id={window.id}" method="POST">
-                        <button type="submit" class="p-1 rounded-md outline hover:bg-teal-300">Delete Window</button>
+                        <button type="submit" class="p-1 rounded-md outline hover:bg-indow-yellow hover:text-white">Delete Window</button>
                     </form>
             </div>
         </div>

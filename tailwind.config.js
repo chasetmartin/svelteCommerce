@@ -4,7 +4,8 @@ export default {
   theme: {
     colors: {
       'indow': '#8CC6D2',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'indow-yellow': '#FFBD29'
     },
     extend: {
       fontFamily: {
