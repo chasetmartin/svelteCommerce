@@ -23,7 +23,7 @@ To clone and run this application with the sqlite db in its current state:
 $ git clone https://github.com/chasetmartin/sveltePriceEstimator.git
 
 # Go into the repository
-$ cd svelteCommerce_prisma
+$ cd sveltePriceEstimator
 
 # Install dependencies
 $ npm install
