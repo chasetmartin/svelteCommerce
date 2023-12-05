@@ -16,7 +16,7 @@ To clone and run this application with your own sqlite dev db:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/chasetmartin/svelteCommerce_prisma.git
+$ git clone https://github.com/chasetmartin/sveltePriceEstimator.git
 
 # Go into the repository
 $ cd svelteCommerce_prisma
