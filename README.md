@@ -1,18 +1,22 @@
 # sveltePriceEstimator
 
-## Description
+## This is an example SvelteKit ecommerce pricing estimator, what could become part of a larger platform where users can login and save their estimates / shopping history. 
 
-### This is an example SvelteKit ecommerce pricing estimator, where users can create estimates for buying window inserts for their home/business. Each window estimate is saved to a sqlite development database using Prisma as an ORM, then immediately displayed back to the user. The app is styled using TailwindCSS.
+* Each window estimate is saved to a sqlite development database using Prisma as an ORM
+* Estimates are immediately displayed back to the user using server-side data loading that queries the database for the existance of a user's estimate.
+* The app is styled using TailwindCSS.
 
-This is not deployment ready - it is just to show my CRUD abilities in SvelteKit.
+-- This is not deployment ready - it is just to show off my CRUD abilities in SvelteKit using an ORM and simple database.
 
-The Login / Logout functionality are not setup.
+-- The Login / Logout functionality are not setup at this time.
 
 ![Screenshot 2023-12-04 at 3 53 29 PM](https://github.com/chasetmartin/svelteCommerce_prisma/assets/36861079/46bc39c7-e7bc-4463-a485-0160261f26cb)
 
 ## Installation
 
-To clone and run this application with your own sqlite dev db:
+To clone and run this application with the sqlite db in its current state:
+
+* Ensure you have Node > v16 installed on your machine, then:
 
 ```bash
 # Clone this repository
