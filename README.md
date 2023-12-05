@@ -1,4 +1,4 @@
-# svelteCommerce_prisma
+# sveltePriceEstimator
 
 ## Description
 
