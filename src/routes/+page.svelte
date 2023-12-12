@@ -1,7 +1,7 @@
 <script lang="ts">
 	import WindowForm from "$lib/components/windowForm.svelte";
     import { instructions } from "$lib/text/instructions";
-
+    import { browser } from "$app/environment";
     import type { PageData } from "./$types";
 
     export let data: PageData;
@@ -13,12 +13,15 @@
         totalPrice = windows.reduce((sum: number, window: any) => sum + Number(window.price), 0);
     }
 
-    let message = sessionStorage.getItem('message');
-    if (message) {
-        setTimeout(() => {
-            sessionStorage.removeItem('message');
-            message = null;
-        }, 5000);
+    let message: string | null;
+    if (browser) {
+        message = sessionStorage.getItem('message');
+        if (message) {
+            setTimeout(() => {
+                sessionStorage.removeItem('message');
+                message = null;
+            }, 5000);
+        }
     }
 
 </script>
