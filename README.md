@@ -1,10 +1,12 @@
 # sveltePriceEstimator
+# https://sveltepriceestimator.netlify.app/
 
 ## This is an example SvelteKit ecommerce pricing estimator, what could become part of a larger platform where users can login and save their estimates / shopping history. 
 
-* Each window estimate is saved to a sqlite development database using Prisma as an ORM
+* Each window estimate is saved to a MySQL Planetscale database using Prisma as an ORM
 * Estimates are immediately displayed back to the user using server-side data loading that queries the database for the existance of a user's estimate.
 * The app is styled using TailwindCSS.
+* The site is password protected since it is for demo purposes and has no built-in auth. Message me to access the live site.
 
 -- This is not deployment ready - it is just to show off my CRUD abilities in SvelteKit using an ORM and simple database.
 
