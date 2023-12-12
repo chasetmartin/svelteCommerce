@@ -13,6 +13,14 @@
         totalPrice = windows.reduce((sum: number, window: any) => sum + Number(window.price), 0);
     }
 
+    let message = sessionStorage.getItem('message');
+    if (message) {
+        setTimeout(() => {
+            sessionStorage.removeItem('message');
+            message = null;
+        }, 5000);
+    }
+
 </script>
 <h1 class="text-4xl font-bold text-white text-center mx-auto p-16 mb-4 bg-indow">Instant Estimate Calculator</h1>
 <h2 class="text-xl text-center p-4">{ instructions.en }</h2>
@@ -31,6 +39,11 @@
     </div>
 
 <h2 class="text-xl font-bold text-center">Your Window Inserts</h2>
+{#if message}
+    <div class="text-center font-bold font-italic text-indow-yellow">
+    {message}
+    </div>
+{/if}
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-2">
         {#each windows as window }
         <div class="mx-auto mt-2 mb-4 w-full rounded-xl outline text-center">
@@ -48,9 +61,14 @@
                     <h4>Price: ${Number(window.price).toFixed(2)}</h4>
                     <p>Width: {window.width} inches</p>
                     <p class="mb-3">Height: {window.height} inches</p>
-                    <form action="?/deleteWindowEstimate&id={window.id}" method="POST">
-                        <button type="submit" class="p-1 rounded-md outline hover:bg-indow-yellow hover:text-white">Delete Window</button>
-                    </form>
+                    <div>
+                        <form class="p-2" action="?/deleteWindowEstimate&id={window.id}" method="POST">
+                            <a href="/{window.id}" class="p-2 rounded-md outline hover:bg-indow-yellow hover:text-white">Edit</a>
+                        </form>
+                        <form class="p-2" action="?/deleteWindowEstimate&id={window.id}" method="POST">
+                            <button type="submit" class="p-2 rounded-md outline hover:bg-indow-yellow hover:text-white">Delete Window</button>
+                        </form>
+                    </div>
             </div>
         </div>
         {/each}
