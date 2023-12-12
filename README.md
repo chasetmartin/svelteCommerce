@@ -16,7 +16,7 @@
 
 ## Installation
 
-To clone and run this application with the sqlite db in its current state:
+To clone and run this application with a sqlite development db:
 
 * Ensure you have Node > v16 installed on your machine, then:
 
