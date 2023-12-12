@@ -29,6 +29,17 @@ $ cd sveltePriceEstimator
 
 # Install dependencies
 $ npm install
+```
+```bash
+# Change the schema.prisma file to point to your own database
+ datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+```
+```bash
+# Initialize your dev database
+$ npx prisma db push
 
 # Run the app
 $ npm run dev
