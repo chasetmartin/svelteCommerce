@@ -5,7 +5,8 @@ export default {
     colors: {
       'indow': '#8CC6D2',
       'white': '#ffffff',
-      'indow-yellow': '#FFBD29'
+      'indow-yellow': '#FFBD29',
+      'red': '#ff0000'
     },
     extend: {
       fontFamily: {

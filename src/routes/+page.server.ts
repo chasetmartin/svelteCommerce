@@ -64,5 +64,47 @@ export const actions: Actions = {
         return {
             status: 200
         }
+    },
+    updateWindowEstimate: async ({ request, url }) => {
+        const id = url.searchParams.get('id');
+        const { inserttype, window, width, height } = Object.fromEntries(await request.formData()) as {
+            inserttype: string;
+            window: string;
+            width: string;
+            height: string;
+        };
+        const parsedInsertType = parseFloat(inserttype);
+        const parsedWidth = parseFloat(width);
+        const parsedHeight = parseFloat(height);
+        const parsedPrice = (parsedWidth/12) * (parsedHeight/12) * parsedInsertType;
+
+        if (!id) {
+            return fail(400, { message: 'Missing id parameter.' });
+        }
+    
+        if (isNaN(parsedWidth) || isNaN(parsedHeight)) {
+            return fail(400, { message: 'Invalid width or height values.' });
+        }
+        
+        try {
+            await prisma.window.update({
+                where: {
+                    id: Number(id)
+                },
+                data: {
+                    inserttype: parsedInsertType,
+                    window,
+                    width: parsedWidth,
+                    height: parsedHeight,
+                    price: parsedPrice
+                }
+            })
+        } catch (err) {
+            console.log(err)
+            return fail(500, { message: 'Could not update window estimate.'})
+        }
+        return {
+            status: 200
+        }
     }
 };

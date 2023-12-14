@@ -1,11 +1,13 @@
 <script>
+	import { enhance } from "$app/forms";
+
 
 </script>
 
 <div class="mx-auto w-3/5 rounded-xl outline text-center">
     <div class="shadow-xl p-4">
         <h3 class="text-xl font-semibold">Add a window to your estimate:</h3>
-        <form class="w-full" action="?/createWindowEstimate" method="POST">
+        <form class="w-full" action="?/createWindowEstimate" method="POST" use:enhance>
             <label for="inserttype">Insert Type</label>
             <select class="outline rounded-sm p-2 m-2" name="inserttype" id="inserttype">
                 <option value="31">Standard Grade</option>
