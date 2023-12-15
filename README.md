@@ -12,7 +12,7 @@
 
 -- The Login / Logout functionality are not setup at this time.
 
-![Screenshot 2023-12-04 at 3 53 29 PM](https://github.com/chasetmartin/svelteCommerce_prisma/assets/36861079/46bc39c7-e7bc-4463-a485-0160261f26cb)
+<img width="1480" alt="Screenshot 2023-12-15 at 9 41 32 AM" src="https://github.com/chasetmartin/sveltePriceEstimator/assets/36861079/8f9ee699-01b8-4f51-be6b-68126146137d">
 
 ## Installation
 
