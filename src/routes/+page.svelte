@@ -55,7 +55,7 @@
         </div>
     </div>
 
-<h2 class="text-xl font-bold text-center">Your Window Inserts: Click values to edit</h2>
+<h2 class="text-xl font-bold text-center">Your Window Inserts: Click values, type, or name to edit</h2>
 <!-- {#if message}
     <div class="text-center font-bold font-italic text-indow-yellow">
     {message}
@@ -79,15 +79,17 @@
                     <br>
                     <label for="width">Width:</label>
                     <input class="outline w-1/6 rounded-sm p-2 m-2" type="text" name="width" id="width" bind:value={window.width}>
-                    <hr>
+                    <hr class="w-1/2 mx-auto m-2">
                     <label for="height">Height:</label>
                     <input class="outline w-1/6 rounded-sm p-2 m-2" type="text" name="height" id="height" bind:value={window.height}>
-                    <hr>
+                    <hr class="w-1/2 mx-auto m-2">
                     {#if formDirtyStates[index]}
-                        <button class="p-2 m-2 text-white rounded-md outline bg-indow-yellow" type="submit">Save Edits</button>
+                        <button class="p-2 m-5 text-white rounded-md outline bg-indow-yellow" type="submit">Save Edits</button>
+                    {:else}
+                        <div class="p-4 m-6 font-extralight italic">Saved to Estimate</div>
                     {/if}
                 </form>
-                <form class="p-2 mt-6" action="?/deleteWindowEstimate&id={window.id}" method="POST" use:enhance>
+                <form class="p-2 mt-4" action="?/deleteWindowEstimate&id={window.id}" method="POST" use:enhance>
                     <button type="submit" class="p-2 rounded-md outline hover:bg-red hover:text-white">Delete Window</button>
                 </form>
                 <h4 class="font-thin p-2">Price: ${((Number(window.width)/12) * (Number(window.height)/12) * Number(window.inserttype)).toFixed(2)}</h4>
