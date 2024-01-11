@@ -1,5 +1,4 @@
 # sveltePriceEstimator
-# https://sveltepriceestimator.netlify.app/
 
 ## This is an example SvelteKit ecommerce pricing estimator, what could become part of a larger platform where users can login and save their estimates / shopping history. 
 
